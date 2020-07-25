@@ -11,20 +11,20 @@ Additional panel preform tow tasks (display random dots on a canvas, display fib
 
 ## Three axis
 
-![](image1.jpg)
+![](image1.JPG)
 
 ## Graph
 
-![](image2.jpg)
+![](image2.JPG)
 
 ## Further explanation
 
-![](image3.jpg)
+![](image3.JPG)
 
 ## Free fall panel
 
-![](image4.jpg)
+![](image4.JPG)
 
 ## multithreading
 
-![](image5.jpg)
+![](image5.JPG)
