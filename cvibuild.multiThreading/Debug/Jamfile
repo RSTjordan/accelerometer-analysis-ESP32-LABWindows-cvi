@@ -1,0 +1,43 @@
+CCFLAGS = -g ;
+HDRS = 	"c:\\program files (x86)\\national instruments\\cvi2019\\toolslib\\activex\\word"
+	"c:\\program files (x86)\\national instruments\\cvi2019\\toolslib\\activex\\excel"
+	"c:\\program files (x86)\\national instruments\\cvi2019\\toolslib\\custctrl"
+	"c:\\program files (x86)\\national instruments\\cvi2019\\toolslib\\custctrl\\custsupp"
+	"c:\\program files (x86)\\national instruments\\cvi2019\\toolslib\\cvirtsup"
+	"c:\\program files (x86)\\national instruments\\cvi2019\\toolslib\\datasock"
+	"c:\\program files (x86)\\national instruments\\cvi2019\\toolslib\\daqUtil"
+	"c:\\program files (x86)\\national instruments\\cvi2019\\toolslib\\printing"
+	"c:\\program files (x86)\\national instruments\\cvi2019\\toolslib\\toolbox"
+	"c:\\program files (x86)\\national instruments\\cvi2019\\toolslib\\reportgen"
+	"c:\\program files (x86)\\national instruments\\cvi2019\\toolslib\\localui"
+	"c:\\program files (x86)\\national instruments\\cvi2019\\instr"
+	"C:\\Program Files (x86)\\National Instruments\\Shared\\CVI\\toolslib\\custctrl"
+	"C:\\Program Files (x86)\\National Instruments\\Shared\\CVI\\toolslib\\custctrl\\custsupp"
+	"C:\\Program Files (x86)\\National Instruments\\Shared\\CVI\\instr"
+	"C:\\ProgramData\\National Instruments\\CVI2019\\instr"
+	"c:\\program files (x86)\\national instruments\\cvi2019\\include"
+	"C:\\Program Files (x86)\\National Instruments\\Shared\\CVI\\include"
+	"C:\\ProgramData\\National Instruments\\CVI2019\\include"
+	"C:\\ProgramData\\National Instruments\\CVI\\include"
+	"c:\\program files (x86)\\national instruments\\cvi2019\\include\\ansi"
+	"c:\\program files (x86)\\national instruments\\cvi2019\\include\\clang\\3.3"
+	"C:\\Program Files (x86)\\IVI Foundation\\IVI\\Include"
+	"C:\\Program Files (x86)\\IVI Foundation\\VISA\\winnt\\include"
+	"C:\\Program Files (x86)\\National Instruments\\Shared\\MSDTRedistributables\\SDKHeaderFiles\\8.1"
+	"c:\\Program Files (x86)\\National Instruments\\CVI2019\\bin"
+	"c:\\Program Files (x86)\\National Instruments\\Shared\\CVI\\Bin"
+	;
+include Jamfile_instr ;
+LOCATE on "multiThreadingDLL.c" = "c:\\Users\\user\\Desktop\\CVI\\final project" ;
+LOCATE on "multiThreadingDLL.h" = "c:\\Users\\user\\Desktop\\CVI\\final project" ;
+Object "c:\\Users\\user\\Desktop\\CVI\\final project\\cvibuild.multiThreading\\Debug\\multiThreadingDLL.obj" : "c:\\Users\\user\\Desktop\\CVI\\final project\\multiThreadingDLL.c" ;
+FILENUM on "c:\\Users\\user\\Desktop\\CVI\\final project\\cvibuild.multiThreading\\Debug\\multiThreadingDLL.obj" = 1 ;
+DEFPROTS on "c:\\Users\\user\\Desktop\\CVI\\final project\\cvibuild.multiThreading\\Debug\\multiThreadingDLL.obj" = "c:\\Users\\user\\Desktop\\CVI\\final project\\cvibuild.multiThreading\\Debug\\multiThreadingDLL.obj.cvidefprots" ;
+OUTFILE on "c:\\Users\\user\\Desktop\\CVI\\final project\\cvibuild.multiThreading\\Debug\\multiThreadingDLL.obj" = "c:\\Users\\user\\Desktop\\CVI\\final project\\cvibuild.multiThreading\\Debug\\multiThreadingDLL.obj.out" ;
+PrjObjects += "c:\\Users\\user\\Desktop\\CVI\\final project\\cvibuild.multiThreading\\Debug\\multiThreadingDLL.obj" ;
+Object "c:\\Users\\user\\Desktop\\CVI\\final project\\cvibuild.multiThreading\\Debug\\resources.res" : "c:\\Users\\user\\Desktop\\CVI\\final project\\cvibuild.multiThreading\\Debug\\resources.in.rc" ;
+Depends "c:\\Users\\user\\Desktop\\CVI\\final project\\cvibuild.multiThreading\\Debug\\resources.res" : "c:\\Users\\user\\Desktop\\CVI\\final project\\cvibuild.multiThreading\\Debug\\manifest.xml" ;
+MainFromObjects "c:\\Users\\user\\Desktop\\CVI\\final project\\cvibuild.multiThreading\\Debug\\multiThreading.exe" : $(PrjObjects) $(InstrObjects) ;
+Depends "c:\\Users\\user\\Desktop\\CVI\\final project\\cvibuild.multiThreading\\Debug\\multiThreading.exe" : "c:\\Users\\user\\Desktop\\CVI\\final project\\cvibuild.multiThreading\\Debug\\link_options.txt" ;
+Depends "c:\\Users\\user\\Desktop\\CVI\\final project\\cvibuild.multiThreading\\Debug\\multiThreading.exe" : "c:\\Users\\user\\Desktop\\CVI\\final project\\cvibuild.multiThreading\\Debug\\resources.res" ;
+Depends all : "c:\\Users\\user\\Desktop\\CVI\\final project\\cvibuild.multiThreading\\Debug\\multiThreading.exe" ;
